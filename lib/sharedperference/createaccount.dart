@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:partice_ptojects/Login.dart';
-import 'package:partice_ptojects/Profile.dart';
+import 'package:partice_ptojects/sharedperference/Login.dart';
+import 'package:partice_ptojects/sharedperference/Profile.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class createaccount extends StatefulWidget {

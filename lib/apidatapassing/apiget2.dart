@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-import 'package:partice_ptojects/apiget3.dart';
+import 'package:partice_ptojects/apidatapassing/apiget3.dart';
 
 class ApiGet extends StatefulWidget {
   const ApiGet({super.key});

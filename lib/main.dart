@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:partice_ptojects/apiget.dart';
-import 'package:partice_ptojects/apiget2.dart';
-import 'createaccount.dart';
-import 'Login.dart';
+import 'package:partice_ptojects/apidatapassing/apiget.dart';
+import 'package:partice_ptojects/apidatapassing/apiget2.dart';
+import 'sharedperference/createaccount.dart';
+import 'sharedperference/Login.dart';
 
 
 
-import 'package:partice_ptojects/userscreen.dart';
+import 'package:partice_ptojects/apidatapassing/userscreen.dart';
 import 'Datapass1screen2/productscreen.dart';
 import 'statefulpartice.dart';
-import 'apiget.dart';
+import 'apidatapassing/apiget.dart';
+import 'package:partice_ptojects/customwidget/maincustom.dart';
 
 void main() {
   runApp(const MYApp());
@@ -27,7 +28,7 @@ class _MYAppState extends State<MYApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: createaccount(),
+      home: maincustom(),
     );
   }
 }

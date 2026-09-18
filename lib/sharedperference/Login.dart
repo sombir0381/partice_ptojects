@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:partice_ptojects/Profile.dart';
+import 'package:partice_ptojects/sharedperference/Profile.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
