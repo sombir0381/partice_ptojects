@@ -12,6 +12,7 @@ import 'statefulpartice.dart';
 import 'apidatapassing/apiget.dart';
 import 'package:partice_ptojects/customwidget/maincustom.dart';
 import 'package:partice_ptojects/formvalidation/formregister.dart';
+import 'package:partice_ptojects/devicepermission/camerafeatures.dart';
 
 void main() {
   runApp(const MYApp());
@@ -29,7 +30,7 @@ class _MYAppState extends State<MYApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: formregister(),
+      home: camerafeature(),
     );
   }
 }
