@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:partice_ptojects/ProviderScreens/LightMode_Provider.dart';
+import 'package:partice_ptojects/Providers/ConditionalRendering.dart';
 import 'package:partice_ptojects/apidatapassing/apiget.dart';
 import 'package:partice_ptojects/apidatapassing/apiget2.dart';
 import 'package:provider/provider.dart';
@@ -17,6 +19,12 @@ import 'package:partice_ptojects/devicepermission/camerafeatures.dart';
 import 'package:partice_ptojects/devicepermission/locationfeatures.dart';
 import 'package:partice_ptojects/Providers/colourChange.dart';
 import 'package:partice_ptojects/ProviderScreens/colourChange_Provider.dart';
+import 'package:partice_ptojects/Providers/LightMode.dart';
+import 'package:partice_ptojects/ProviderScreens/LightMode_Provider.dart';
+import 'package:partice_ptojects/ProviderScreens/ConditionalRendering_Provider.dart';
+import 'package:partice_ptojects/Providers/ConditionalRendering.dart';
+
+
 
 
 
@@ -25,8 +33,8 @@ void main() {
   runApp(
       ChangeNotifierProvider(
         create:(context)=>
-            colourChangeProvider(),
-        child:const MyApp(),
+            messageHide(),
+        child:const MYApp(),
       )
   );
 }
@@ -43,7 +51,7 @@ class _MYAppState extends State<MYApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: colourChange(),
+      home: ConditionalrenderingProvider(),
     );
   }
 }
