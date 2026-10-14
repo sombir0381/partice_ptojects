@@ -23,20 +23,25 @@ import 'package:partice_ptojects/Providers/LightMode.dart';
 import 'package:partice_ptojects/ProviderScreens/LightMode_Provider.dart';
 import 'package:partice_ptojects/ProviderScreens/ConditionalRendering_Provider.dart';
 import 'package:partice_ptojects/Providers/ConditionalRendering.dart';
+import 'package:partice_ptojects/Animations/Animated_Container.dart';
 
 
 
 
 
 
-void main() {
-  runApp(
-      ChangeNotifierProvider(
-        create:(context)=>
-            messageHide(),
-        child:const MYApp(),
-      )
-  );
+// void main() {
+//   runApp(
+//       ChangeNotifierProvider(
+//         create:(context)=>
+//             messageHide(),
+//         child:const MYApp(),
+//       )
+//   );
+// }
+
+void main (){
+  runApp(MYApp());
 }
 
 class MYApp extends StatefulWidget {
@@ -51,7 +56,7 @@ class _MYAppState extends State<MYApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ConditionalrenderingProvider(),
+      home: Animated_Container(),
     );
   }
 }
