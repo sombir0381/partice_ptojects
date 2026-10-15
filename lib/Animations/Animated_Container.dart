@@ -18,7 +18,7 @@ class _Animated_ContainerState extends State<Animated_Container> {
         title: Text("Animated Container"),
       ),
 
-      body: Column(
+      body:   Column(
         children: [
           Center(
             child: AnimatedContainer

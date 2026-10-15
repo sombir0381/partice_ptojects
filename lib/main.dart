@@ -24,6 +24,7 @@ import 'package:partice_ptojects/ProviderScreens/LightMode_Provider.dart';
 import 'package:partice_ptojects/ProviderScreens/ConditionalRendering_Provider.dart';
 import 'package:partice_ptojects/Providers/ConditionalRendering.dart';
 import 'package:partice_ptojects/Animations/Animated_Container.dart';
+import 'package:partice_ptojects/Animations/Animated_Opacity.dart';
 
 
 
@@ -56,7 +57,7 @@ class _MYAppState extends State<MYApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Animated_Container(),
+      home: Animated_Opacity(),
     );
   }
 }
